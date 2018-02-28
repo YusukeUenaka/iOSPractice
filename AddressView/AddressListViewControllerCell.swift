@@ -14,4 +14,5 @@ class AddressListViewControllerCell:UITableViewCell {
     
     @IBOutlet weak var AddressName: UILabel!
     
+    
 }

@@ -17,6 +17,7 @@ class AddressListViewController: UIViewController, UITableViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         // NavigationBarのタイトルを設定
+        
         self.navigationItem.title = "連絡先一覧"
     }
 
