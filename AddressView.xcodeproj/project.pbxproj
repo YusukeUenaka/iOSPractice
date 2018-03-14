@@ -18,6 +18,9 @@
 		0B96BBEF2043ABBA00AA073B /* AddressListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B96BBEE2043ABBA00AA073B /* AddressListViewController.xib */; };
 		0B96BC432047C7F000AA073B /* AddressListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B96BC422047C7F000AA073B /* AddressListViewCell.xib */; };
 		0B96BC452047C80900AA073B /* AddressListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B96BC442047C80900AA073B /* AddressListViewCell.swift */; };
+		0B96BC492050BE8600AA073B /* AddressList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B96BC482050BE8600AA073B /* AddressList.plist */; };
+		0B96BC4B2050D58200AA073B /* AddressDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B96BC4A2050D58200AA073B /* AddressDetailController.swift */; };
+		0B96BC4D2050D59800AA073B /* AddressDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B96BC4C2050D59800AA073B /* AddressDetailController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		0B96BBEE2043ABBA00AA073B /* AddressListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressListViewController.xib; sourceTree = "<group>"; };
 		0B96BC422047C7F000AA073B /* AddressListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressListViewCell.xib; sourceTree = "<group>"; };
 		0B96BC442047C80900AA073B /* AddressListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListViewCell.swift; sourceTree = "<group>"; };
+		0B96BC482050BE8600AA073B /* AddressList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AddressList.plist; sourceTree = "<group>"; };
+		0B96BC4A2050D58200AA073B /* AddressDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressDetailController.swift; sourceTree = "<group>"; };
+		0B96BC4C2050D59800AA073B /* AddressDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressDetailController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 				0B96BBC72043AAFE00AA073B /* LaunchScreen.storyboard */,
 				0B96BBCA2043AAFE00AA073B /* Info.plist */,
 				0B96BBC22043AAFE00AA073B /* AddressView.xcdatamodeld */,
+				0B96BC482050BE8600AA073B /* AddressList.plist */,
 			);
 			path = AddressView;
 			sourceTree = "<group>";
@@ -149,6 +156,8 @@
 		0B96BBF72044203600AA073B /* AddressDetail */ = {
 			isa = PBXGroup;
 			children = (
+				0B96BC4A2050D58200AA073B /* AddressDetailController.swift */,
+				0B96BC4C2050D59800AA073B /* AddressDetailController.xib */,
 			);
 			name = AddressDetail;
 			sourceTree = "<group>";
@@ -264,7 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B96BC432047C7F000AA073B /* AddressListViewCell.xib in Resources */,
+				0B96BC492050BE8600AA073B /* AddressList.plist in Resources */,
 				0B96BBEF2043ABBA00AA073B /* AddressListViewController.xib in Resources */,
+				0B96BC4D2050D59800AA073B /* AddressDetailController.xib in Resources */,
 				0B96BBC92043AAFE00AA073B /* LaunchScreen.storyboard in Resources */,
 				0B96BBC62043AAFE00AA073B /* Assets.xcassets in Resources */,
 				0B96BBC12043AAFE00AA073B /* Main.storyboard in Resources */,
@@ -293,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B96BBBE2043AAFE00AA073B /* AddressListViewController.swift in Sources */,
+				0B96BC4B2050D58200AA073B /* AddressDetailController.swift in Sources */,
 				0B96BC452047C80900AA073B /* AddressListViewCell.swift in Sources */,
 				0B96BBC42043AAFE00AA073B /* AddressView.xcdatamodeld in Sources */,
 				0B96BBBC2043AAFE00AA073B /* AppDelegate.swift in Sources */,

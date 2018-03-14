@@ -13,18 +13,21 @@ class AddressListViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var tableView: UITableView!
 
     let name = ["佐藤","鈴木","高橋","田中","伊藤","渡辺"]
-    let mailAddress = ["sto@localhost.com","suzuki@localhost.com","takahashi@localhost.com","tanaka@localhost.com","itou@localhost.com","watanabe@localhost.com"]
-    let phoneNumber = ["090-0000-0000","090-0000-0001","090-0000-0002","090-0000-0003","090-0000-0004","090-0000-0005"]
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //self.tableView.delegate = self
-        //self.tableView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
         // NavigationBarのタイトルを設定
         self.navigationItem.title = "連絡先一覧"
+        
+        // pListの読み込み
+
+        
         
         //自作セルをテーブルビューに登録する。
         let addressCell = UINib(nibName: "AddressListViewCell", bundle: nil)
@@ -68,7 +71,13 @@ class AddressListViewController: UIViewController, UITableViewDelegate, UITableV
         cell.name?.text = name[indexPath.row]
         return cell
     }
-
-
+    
+    func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
+        // [indexPath.row] から画像名を探し、UImage を設定
+        let vc = AddressDetailController(sq: tableView.tag)
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
 }
+
 

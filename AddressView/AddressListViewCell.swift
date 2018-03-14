@@ -12,8 +12,8 @@ import UIKit
 class AddressListViewCell: UITableViewCell {
 
     
+    
     @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var cell: AddressListViewCell!
 
     override func awakeFromNib() {
         super.awakeFromNib()
