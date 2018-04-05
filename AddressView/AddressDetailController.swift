@@ -14,11 +14,11 @@ import UIKit
 class AddressDetailController: UIViewController, UITableViewDelegate  {
 
     fileprivate let addressSq: Int
-    @IBOutlet weak var StackView: UIStackView!
 
-    @IBOutlet weak var mAddress: UILabel!
+    
+    @IBOutlet weak var mailAddress: UILabel!
     @IBOutlet weak var telNumber: UILabel!
-    let mailAddress: [String] = ["sato@localhost.com","suzuki@localhost.com","takahashi@localhost.com","tanaka@localhost.com","itou@localhost.com","watanabe@localhost.com"]
+    let mAddress: [String] = ["sato@localhost.com","suzuki@localhost.com","takahashi@localhost.com","tanaka@localhost.com","itou@localhost.com","watanabe@localhost.com"]
     
     let phoneNumber: [String] = ["090-0000-0000","090-0000-0001","090-0000-0002","090-0000-0003","090-0000-0004","090-0000-0005"]
 
@@ -33,12 +33,21 @@ class AddressDetailController: UIViewController, UITableViewDelegate  {
     
     init(sq: Int) {
         addressSq = sq
-//        mAddress.text = mailAddress[addressSq]
-        // mAddress.text = mailAddress[0]
-        // telNumber.text = phoneNumber[addressSq]
-        //mAddress.text = "sato@localhost.com"
-        //telNumber.text = "090-0000-0000"
         super.init(nibName: nil, bundle: nil)
+    }
+    
+    override func viewDidLoad() {
+        //mAddress.text = mailAddress[addressSq]
+        //mailAddress.text = mAddress[1]
+        // telNumber.text = phoneNumber[addressSq]
+        self.mailAddress.text = "sato@localhost.com"
+        self.telNumber.text = "090-0000-0000"
+    }
+    
+    override func loadView() {
+        if let loadView = UINib(nibName: "AddressDetailController", bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView {
+            view = loadView
+        }
     }
     
     
