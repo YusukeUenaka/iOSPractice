@@ -13,19 +13,17 @@ import UIKit
 
 class AddressDetailController: UIViewController, UITableViewDelegate  {
 
+    // MARK: - Properties
     fileprivate let addressSq: Int
-
-    
-    @IBOutlet weak var mailAddress: UILabel!
-    @IBOutlet weak var telNumber: UILabel!
     let mAddress: [String] = ["sato@localhost.com","suzuki@localhost.com","takahashi@localhost.com","tanaka@localhost.com","itou@localhost.com","watanabe@localhost.com"]
     
     let phoneNumber: [String] = ["090-0000-0000","090-0000-0001","090-0000-0002","090-0000-0003","090-0000-0004","090-0000-0005"]
 
     
-    
-    
-    
+    // MARK: - @IBOutlet
+    @IBOutlet weak var mailAddress: UILabel!
+    @IBOutlet weak var telNumber: UILabel!
+
     // MARK: - Initializer
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -36,12 +34,10 @@ class AddressDetailController: UIViewController, UITableViewDelegate  {
         super.init(nibName: nil, bundle: nil)
     }
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
-        //mAddress.text = mailAddress[addressSq]
-        //mailAddress.text = mAddress[1]
-        // telNumber.text = phoneNumber[addressSq]
-        self.mailAddress.text = "sato@localhost.com"
-        self.telNumber.text = "090-0000-0000"
+        mailAddress.text = mAddress[addressSq]
+        telNumber.text = phoneNumber[addressSq]
     }
     
     override func loadView() {

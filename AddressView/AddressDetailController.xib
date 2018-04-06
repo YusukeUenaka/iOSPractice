@@ -20,74 +20,50 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="メールアドレス：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fle-Yr-SfE" userLabel="メールアドレス">
-                    <rect key="frame" x="118" y="323" width="139" height="20.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BqJ-Qj-2Wv">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="BqJ-Qj-2Wv">
+                    <rect key="frame" x="20" y="100" width="181" height="41"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uhw-Im-OrH">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uhw-Im-OrH" userLabel="Mail Stack View">
+                            <rect key="frame" x="0.0" y="0.0" width="181" height="20.5"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="メールアドレス：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRz-w7-Dqi" userLabel="メールアドレス">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレス：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRz-w7-Dqi" userLabel="メールアドレス">
                                     <rect key="frame" x="0.0" y="0.0" width="139" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dp-En-Is3" userLabel="mailAddress">
-                                    <rect key="frame" x="139" y="0.0" width="236" height="20.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dp-En-Is3" userLabel="mailAddress">
+                                    <rect key="frame" x="139" y="0.0" width="42" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <constraints>
-                                <constraint firstItem="9dp-En-Is3" firstAttribute="leading" secondItem="WRz-w7-Dqi" secondAttribute="trailing" constant="10" id="5mt-c9-LgX"/>
-                                <constraint firstItem="WRz-w7-Dqi" firstAttribute="leading" secondItem="Uhw-Im-OrH" secondAttribute="leading" constant="10" id="FFG-TA-emk"/>
-                            </constraints>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQ5-Lf-rUn">
-                            <rect key="frame" x="0.0" y="20.5" width="375" height="20.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IQ5-Lf-rUn" userLabel="Mobile Stack VIew">
+                            <rect key="frame" x="0.0" y="20.5" width="163.5" height="20.5"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="モバイル番号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBV-sZ-uoz" userLabel="モバイル番号">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="モバイル番号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBV-sZ-uoz" userLabel="モバイル番号">
                                     <rect key="frame" x="0.0" y="0.0" width="121.5" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxy-7r-GbQ" userLabel="telNumber">
-                                    <rect key="frame" x="121.5" y="0.0" width="253.5" height="20.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxy-7r-GbQ" userLabel="telNumber">
+                                    <rect key="frame" x="121.5" y="0.0" width="42" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <constraints>
-                                <constraint firstItem="YBV-sZ-uoz" firstAttribute="leading" secondItem="IQ5-Lf-rUn" secondAttribute="leading" constant="10" id="DZr-hH-jpj"/>
-                                <constraint firstItem="Hxy-7r-GbQ" firstAttribute="leading" secondItem="YBV-sZ-uoz" secondAttribute="trailing" constant="10" id="swC-wx-np9"/>
-                            </constraints>
                         </stackView>
                     </subviews>
-                    <constraints>
-                        <constraint firstItem="Uhw-Im-OrH" firstAttribute="width" secondItem="BqJ-Qj-2Wv" secondAttribute="width" id="BOp-mQ-VlO"/>
-                        <constraint firstItem="Uhw-Im-OrH" firstAttribute="top" secondItem="BqJ-Qj-2Wv" secondAttribute="top" constant="10" id="GhB-uy-lut"/>
-                        <constraint firstItem="IQ5-Lf-rUn" firstAttribute="top" secondItem="Uhw-Im-OrH" secondAttribute="bottom" constant="10" id="Hl0-ms-0cT"/>
-                        <constraint firstItem="IQ5-Lf-rUn" firstAttribute="top" secondItem="Uhw-Im-OrH" secondAttribute="bottom" id="ObY-Zr-xQx"/>
-                        <constraint firstItem="IQ5-Lf-rUn" firstAttribute="width" secondItem="BqJ-Qj-2Wv" secondAttribute="width" id="RVN-Xn-RzR"/>
-                        <constraint firstItem="Uhw-Im-OrH" firstAttribute="top" secondItem="BqJ-Qj-2Wv" secondAttribute="top" id="Yol-ed-t1r"/>
-                        <constraint firstItem="IQ5-Lf-rUn" firstAttribute="leading" secondItem="BqJ-Qj-2Wv" secondAttribute="leading" id="dTs-iT-qIr"/>
-                        <constraint firstItem="Uhw-Im-OrH" firstAttribute="leading" secondItem="BqJ-Qj-2Wv" secondAttribute="leading" id="nTJ-Ev-MbT"/>
-                    </constraints>
                 </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="BqJ-Qj-2Wv" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="feA-MZ-h1S"/>
+                <constraint firstItem="BqJ-Qj-2Wv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="V9S-87-2br"/>
+                <constraint firstItem="BqJ-Qj-2Wv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="XZ4-n7-TCB"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>

@@ -4,46 +4,48 @@
 <dict>
 	<key>name</key>
 	<dict>
-		<key>name1</key>
+		<key>member1</key>
 		<string>佐藤</string>
-		<key>name2</key>
+		<key>member2</key>
 		<string>鈴木</string>
-		<key>name3</key>
+		<key>member3</key>
 		<string>高橋</string>
-		<key>name4</key>
+		<key>member4</key>
 		<string>田中</string>
-		<key>name5</key>
+		<key>member5</key>
 		<string>伊藤</string>
-		<key>name6</key>
+		<key>member6</key>
 		<string>渡辺</string>
 	</dict>
-	<key>mailAddress</key>
-	<dict/>
-	<key>mail1</key>
-	<string>sato@localhost.com</string>
-	<key>mail2</key>
-	<string>suzuki@localhost.com</string>
-	<key>mail3</key>
-	<string>takahashi@localhost.com</string>
-	<key>mail4</key>
-	<string>tanaka@localhost.com</string>
-	<key>mail5</key>
-	<string>ito@localhost.com</string>
-	<key>mail6</key>
-	<string>watanabe@localhost.com</string>
-	<key>telNumber</key>
-	<dict/>
-	<key>number1</key>
-	<string>090-0000-0000</string>
-	<key>number2</key>
-	<string>090-0000-0001</string>
-	<key>number3</key>
-	<string>090-0000-0002</string>
-	<key>number4</key>
-	<string>090-0000-0003</string>
-	<key>number5</key>
-	<string>090-0000-0004</string>
-	<key>number6</key>
-	<string>090-0000-0005</string>
+	<key>mail</key>
+	<dict>
+		<key>member1</key>
+		<string>sato@localhost.com</string>
+		<key>member2</key>
+		<string>suzuki@localhost.com</string>
+		<key>member3</key>
+		<string>takahashi@localhost.com</string>
+		<key>member4</key>
+		<string>tanaka@localhost.com</string>
+		<key>member5</key>
+		<string>ito@localhost.com</string>
+		<key>member6</key>
+		<string>watanabe@localhost.com</string>
+	</dict>
+	<key>number</key>
+	<dict>
+		<key>member1</key>
+		<string>090-0000-0000</string>
+		<key>member2</key>
+		<string>090-0000-0001</string>
+		<key>member3</key>
+		<string>090-0000-0002</string>
+		<key>member4</key>
+		<string>090-0000-0003</string>
+		<key>member5</key>
+		<string>090-0000-0004</string>
+		<key>member6</key>
+		<string>090-0000-0005</string>
+	</dict>
 </dict>
 </plist>
